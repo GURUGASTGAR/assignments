@@ -4,6 +4,7 @@
  * Return a promise.all which return the time in milliseconds it takes to complete the entire operation.
  */
 
+<<<<<<< HEAD
 //for (let i = 0; i < 10000000000; i++) {}
 function wait1(t) {
   const one = new Promise((resolve) => {
@@ -41,5 +42,22 @@ async function calculateTime(t1, t2, t3) {
   console.log(diff);
 }
 calculateTime(1, 1, 1);
+=======
+function wait1(t) {
+
+}
+
+function wait2(t) {
+
+}
+
+function wait3(t) {
+
+}
+
+function calculateTime(t1, t2, t3) {
+
+}
+>>>>>>> upstream/master
 
 module.exports = calculateTime;

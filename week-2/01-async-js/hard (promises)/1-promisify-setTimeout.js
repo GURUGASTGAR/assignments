@@ -3,6 +3,7 @@
 */
 
 function wait(n) {
+<<<<<<< HEAD
   const waits = new Promise(function (resolve) {
     setTimeout(() => {
       resolve(`resolved after ${n} sec`);
@@ -15,4 +16,8 @@ function wait(n) {
 //   console.log(answer);
 // }
 // ans();
+=======
+}
+
+>>>>>>> upstream/master
 module.exports = wait;

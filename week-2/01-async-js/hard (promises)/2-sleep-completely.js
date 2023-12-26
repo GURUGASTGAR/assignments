@@ -5,6 +5,7 @@
  */
 
 function sleep(milliseconds) {
+<<<<<<< HEAD
   const p = new Promise((resolve) => {
     setTimeout(() => {
       resolve("hello");
@@ -23,6 +24,8 @@ let a = 0;
 
 while (true) {
   a++;
+=======
+>>>>>>> upstream/master
 }
 
 module.exports = sleep;

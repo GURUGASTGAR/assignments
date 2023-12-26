@@ -12,6 +12,7 @@
     - For any other route not defined in the server return 404
     Testing the server - run `npm run test-fileServer` command in terminal
  */
+<<<<<<< HEAD
 const express = require("express");
 const fs = require("fs");
 const path = require("path");
@@ -52,3 +53,12 @@ app.all("*", (req, res) => {
 app.listen(3000);
 
 module.exports = app;
+=======
+const express = require('express');
+const fs = require('fs');
+const path = require('path');
+const app = express();
+
+
+module.exports = app;
+>>>>>>> upstream/master
