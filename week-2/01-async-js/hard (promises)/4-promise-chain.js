@@ -6,53 +6,6 @@
  */
 
 function wait1(t) {
-<<<<<<< HEAD
-  const one = new Promise((resolve) => {
-    setTimeout(() => {
-      resolve(`the wait time is ${t}`);
-    }, t * 1000);
-  });
-  return one;
-}
-
-function wait2(t) {
-  const one = new Promise((resolve) => {
-    setTimeout(() => {
-      resolve(`the wait time is ${t}`);
-    }, t * 1000);
-  });
-  return one;
-}
-
-function wait3(t) {
-  const one = new Promise((resolve) => {
-    setTimeout(() => {
-      resolve(`the wait time is ${t}`);
-    }, t * 1000);
-  });
-  return one;
-}
-
-function calculateTime(t1, t2, t3) {
-  const start = Date.now();
-  return wait1(t1)
-    .then((ans1) => {
-      console.log(ans1);
-      return wait2(t2);
-    })
-    .then((ans2) => {
-      console.log(ans2);
-      return wait3(t3);
-    })
-    .then((ans3) => {
-      console.log(ans3);
-      //console.log(ans1, ans2, ans3);
-      const end = Date.now();
-      console.log(end - start);
-    });
-}
-calculateTime(1, 5, 1);
-=======
 
 }
 
@@ -67,6 +20,5 @@ function wait3(t) {
 function calculateTime(t1, t2, t3) {
 
 }
->>>>>>> upstream/master
 
 module.exports = calculateTime;

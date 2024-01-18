@@ -14,24 +14,7 @@
 */
 
 function calculateTotalSpentByCategory(transactions) {
-  const categoryTotals = {};
-
-  transactions.forEach((transaction) => {
-    const { category, price } = transaction;
-
-    if (!categoryTotals[category]) {
-      categoryTotals[category] = 0;
-    }
-
-    categoryTotals[category] += price;
-  });
-
-  const resultArray = Object.keys(categoryTotals).map((category) => ({
-    category,
-    totalSpent: categoryTotals[category],
-  }));
-
-  return resultArray;
+  return [];
 }
 
 module.exports = calculateTotalSpentByCategory;

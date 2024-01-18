@@ -12,48 +12,6 @@
     - For any other route not defined in the server return 404
     Testing the server - run `npm run test-fileServer` command in terminal
  */
-<<<<<<< HEAD
-const express = require("express");
-const fs = require("fs");
-const path = require("path");
-const app = express();
-app.use(express.json());
-
-// function folder() {
-//   return new Promise((resolve) => {
-//     fs.readdir(
-//       "C:/Users/gurug/OneDrive/Desktop/Main-js-ALL/COHERt_ASSIGNMENTS/assignments/week-2/02-nodejs/files",
-//       function (err, files) {
-//         resolve(files);
-//       }
-//     );
-//   });
-// }
-app.get("/files", function (req, res) {
-  fs.readdir(path.join(__dirname, "./files"), (err, files) => {
-    if (err) {
-      return res.status(500).json({ msg: "folder not found" });
-    }
-    res.json(files);
-  });
-});
-app.get("/files/:filename", (req, res) => {
-  const filename = path.join(--dirname, "./files", req.params.filename);
-  fs.readFile(filename, "utf-8", (err, data) => {
-    if (err) {
-      return res.status(411).json({ msg: "nothing to be found" });
-    }
-    res.send(data);
-  });
-});
-app.all("*", (req, res) => {
-  res.status(404).json({ msg: "provide calid path" });
-});
-
-app.listen(3000);
-
-module.exports = app;
-=======
 const express = require('express');
 const fs = require('fs');
 const path = require('path');
@@ -61,4 +19,3 @@ const app = express();
 
 
 module.exports = app;
->>>>>>> upstream/master

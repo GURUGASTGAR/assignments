@@ -4,28 +4,7 @@
 */
 
 function isPalindrome(str) {
-  let uper=str.toUpperCase();
-  let ary = uper.replace(/[^\w\s]/g,"").split('');
-  let newAry = [];
-  if(ary.length==0){
-    return true;
-  }
-  for(let i=0;i<ary.length;i++)
-  {
-       newAry[ary.length-i-1] = ary[i]; //insted of for loop use ary.reverse();
-       
-  }
-  for(let i=0;i<ary.length;i++)
-  {
-  if(ary[i]==newAry[i]){
-    return true;
-  }
-
-else{
-  return false;
-
-}
-}
+  return true;
 }
 
 module.exports = isPalindrome;

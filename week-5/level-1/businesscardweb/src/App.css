@@ -1,0 +1,49 @@
+.card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px rgba(2,3,2,0.3);
+    background-color: rgb(173, 225, 244);
+}
+.social {
+    background-color: #396ef5;
+    padding:10px;
+    margin:10px;
+    border: 0px solid #afa9f8;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(2,3,2,0.3);
+}
+.username {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+.description {
+
+    font-Size: 16px;
+    color: #555;
+    margin-Bottom: 15px;
+  }
+.socialLinks {
+    display: flex;
+    margin-Bottom: 15px;
+  }
+  .interestsHeader{
+    font-size: 18px;
+    margin-Bottom: 10px;
+    color: #333;
+  }
+  .interestsList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .interestItem {
+    font-size: 14px;
+    margin-Bottom: 5px;
+    color:#555;
+  }

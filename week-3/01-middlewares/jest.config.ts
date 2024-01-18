@@ -4,7 +4,4 @@ export default {
   coverageDirectory: 'coverage',
   coverageProvider: 'v8',
 };
-<<<<<<< HEAD
-=======
 
->>>>>>> upstream/master

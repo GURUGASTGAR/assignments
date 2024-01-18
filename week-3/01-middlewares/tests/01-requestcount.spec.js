@@ -12,11 +12,7 @@ describe('GET /user', function() {
       })
   });
 
-<<<<<<< HEAD
-  it('10 more requests log 12', function() {
-=======
   it('10 more requests log 12', function(done) {
->>>>>>> upstream/master
           for (let i = 0; i<10; i++) {
             request(app)
                   .get('/user')
